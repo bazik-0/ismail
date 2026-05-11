@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stand With Mohd Ismail</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #f8fafc;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-slide-up {
+            animation: slideUp 0.6s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased">
+
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2 text-emerald-600 font-bold text-xl">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                <span>HopeForIsmail</span>
+            </div>
+            <a href="#donate" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-full font-medium transition shadow-sm md:hidden">
+                Donate
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content Grid -->
+    <main class="max-w-6xl mx-auto px-4 py-8 md:py-12">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 relative">
+            
+            <!-- Left Column: Story & Image -->
+            <div class="md:col-span-7 space-y-8 animate-slide-up">
+                
+                <!-- Hero Image Area -->
+                <div class="rounded-3xl overflow-hidden shadow-lg bg-slate-200 relative aspect-[4/3] group">
+                    <!-- The image src exactly matches your uploaded file name -->
+                    <img 
+                        src="WhatsApp Image 2026-05-11 at 10.44.10 PM.jpeg" 
+                        onerror="this.src='https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1000&q=80'"
+                        alt="Mohd Ismail" 
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 md:p-8">
+                        <span class="bg-emerald-500 text-white text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full mb-3 inline-block shadow-sm">Medical Fundraiser</span>
+                        <h1 class="text-3xl md:text-4xl font-bold text-white leading-tight">Help 20-year-old Ismail recover from a severe football injury.</h1>
+                    </div>
+                </div>
+
+                <!-- Story Section -->
+                <div class="bg-white rounded-3xl p-6 md:p-8 shadow-sm border border-slate-100">
+                    <div class="flex items-center gap-4 border-b border-slate-100 pb-6 mb-6 text-slate-500">
+                        <div class="flex flex-col">
+                            <span class="text-sm uppercase tracking-wide font-semibold text-slate-400">Beneficiary</span>
+                            <span class="font-bold text-slate-800 text-lg">Mohd Ismail, Age 20</span>
+                        </div>
+                    </div>
+
+                    <h2 class="text-2xl font-bold mb-4 text-slate-800">The Story</h2>
+                    
+                    <div class="prose prose-slate max-w-none text-slate-600 space-y-4 leading-relaxed">
+                        <p>
+                            Mohd Ismail is a vibrant 20-year-old with a deep passion for football. The field is where he feels most alive, dedicating his time and energy to the sport he loves.
+                        </p>
+                        <p>
+                            Unfortunately, during a recent match, Ismail suffered a severe and unexpected leg injury. What was supposed to be a regular game turned into a medical emergency. He is currently undergoing treatment and needs significant medical care to ensure his leg heals properly so he can walk—and hopefully play—again.
+                        </p>
+                        
+                        <blockquote class="bg-emerald-50 border-l-4 border-emerald-500 p-4 rounded-r-xl my-6 text-emerald-800 font-medium italic">
+                            "The road to recovery is tough, but with the support of our community, Ismail won't have to walk it alone."
+                        </blockquote>
+
+                        <p>
+                            The medical expenses are mounting, and we have set a goal of <strong>₹50,000</strong> to cover his immediate treatments, medications, and upcoming physical therapy. 
+                        </p>
+                        <p>
+                            Every single contribution, no matter how small, goes directly towards bringing a smile back to Ismail's face and helping him get back on his feet. Please consider donating and sharing this page with your friends and family.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Sticky Donation Widget -->
+            <div class="md:col-span-5 relative" id="donate">
+                <div class="sticky top-24 glass-card rounded-3xl p-6 md:p-8 shadow-xl border border-slate-200 animate-slide-up" style="animation-delay: 0.2s;">
+                    
+                    <!-- Progress Section -->
+                    <div class="mb-8">
+                        <div class="flex justify-between items-end mb-2">
+                            <div>
+                                <p class="text-sm text-slate-500 font-medium uppercase tracking-wide">Goal</p>
+                                <p class="text-3xl font-bold text-slate-800">₹50,000</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Progress Bar -->
+                        <div class="w-full bg-slate-100 rounded-full h-2.5 mb-2 overflow-hidden">
+                            <div class="bg-emerald-500 h-2.5 rounded-full relative" style="width: 15%;">
+                                <div class="absolute inset-0 bg-white/20 animate-pulse"></div>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-500 font-medium text-center mt-3">Be among the first to support Ismail.</p>
+                    </div>
+
+                    <hr class="border-slate-100 mb-8">
+
+                    <!-- Direct Payment Section -->
+                    <h3 class="font-bold text-xl mb-6 text-center text-slate-800">Make a Secure Donation</h3>
+                    
+                    <!-- QR Code Display -->
+                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 mb-6 flex flex-col items-center">
+                        <p class="text-sm font-semibold text-slate-500 mb-4 uppercase tracking-wider">Scan & Pay via any UPI App</p>
+                        <div class="bg-white p-3 rounded-2xl shadow-sm border border-slate-100 mb-4">
+                            <!-- Dynamic QR targeting the exact UPI ID -->
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=upi%3A%2F%2Fpay%3Fpa%3D8082129446%40nyes%26pn%3DMohd%2520Ismail%26cu%3DINR" 
+                                 alt="UPI QR Code" 
+                                 class="w-48 h-48">
+                        </div>
+                        <div class="flex gap-2 justify-center w-full">
+                            <span class="text-xs font-bold text-gray-400">GPAY / PHONEPE / PAYTM</span>
+                        </div>
+                    </div>
+
+                    <div class="relative flex py-2 items-center mb-6">
+                        <div class="flex-grow border-t border-slate-200"></div>
+                        <span class="flex-shrink-0 mx-4 text-slate-400 text-xs font-semibold uppercase tracking-wider">Or copy UPI ID</span>
+                        <div class="flex-grow border-t border-slate-200"></div>
+                    </div>
+
+                    <!-- Modern Copy Button -->
+                    <div class="relative group">
+                        <div class="absolute -inset-0.5 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-200"></div>
+                        <div class="relative flex items-center justify-between bg-white border border-slate-200 p-2 pl-4 rounded-xl shadow-sm">
+                            <span class="font-mono text-slate-700 font-medium text-sm sm:text-base break-all pr-2" id="upi-text">8082129446@nyes</span>
+                            <button onclick="copyToClipboard()" class="bg-slate-900 hover:bg-emerald-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors flex items-center gap-2 flex-shrink-0">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                                <span id="copy-btn-text">Copy</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <p class="text-xs text-center text-slate-400 mt-6">
+                        Funds will be transferred directly to Mohd Ismail's bank account.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800 mt-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-sm mb-2">Developed to support Mohd Ismail's medical recovery.</p>
+            <p class="text-xs opacity-60">Please ensure the UPI ID matches before making a transaction.</p>
+        </div>
+    </footer>
+
+    <!-- Copy Script -->
+    <script>
+        function copyToClipboard() {
+            const upiId = '8082129446@nyes';
+            const btnText = document.getElementById('copy-btn-text');
+            
+            // Temporary text area approach for broad mobile/desktop support
+            const el = document.createElement('textarea');
+            el.value = upiId;
+            el.setAttribute('readonly', '');
+            el.style.position = 'absolute';
+            el.style.left = '-9999px';
+            document.body.appendChild(el);
+            el.select();
+            
+            try {
+                document.execCommand('copy');
+                // Visual feedback
+                btnText.innerText = 'Copied!';
+                btnText.parentElement.classList.replace('bg-slate-900', 'bg-emerald-600');
+                
+                setTimeout(() => {
+                    btnText.innerText = 'Copy';
+                    btnText.parentElement.classList.replace('bg-emerald-600', 'bg-slate-900');
+                }, 2000);
+            } catch (err) {
+                alert('Please copy this UPI ID manually: ' + upiId);
+            }
+            
+            document.body.removeChild(el);
+        }
+    </script>
+</body>
+</html>
